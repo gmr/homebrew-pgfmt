@@ -31,6 +31,6 @@ class Pgfmt < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/pgfmt --version")
+    assert_match "Format PostgreSQL SQL", shell_output("#{bin}/pgfmt --help")
   end
 end
